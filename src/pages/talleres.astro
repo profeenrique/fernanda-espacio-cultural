@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/layout.astro";
+import TarjetaTaller from "../components/tarjetataller.astro";
+---
+
+<Layout>
+  <h1>Nuestros talleres</h1>
+
+  <TarjetaTaller nombre="Fotografia" descripcion="Fotografia digital." />
+
+<img src="taller-foto.webp" alt="Taller de fotografia" />
+  <TarjetaTaller nombre="Ceramica" descripcion="Tecnicas de modelado." />
+<img src="ceramica.jpg" alt="Taller de ceramica">
+  <TarjetaTaller nombre="Escritura creativa" descripcion="Crear relatos." />
+<img src="digital.jpg" alt="Dibujo digital">
+  <TarjetaTaller nombre="Ilustracion" descripcion="Dibujo digital." />
+
+  <style>
+  img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+</style>
+</Layout>
